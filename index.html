@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dracula">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>126</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col lg:items-center">
+
+    <div class="p-10 mt-20 lg:mx-40 max-w-[900px]">
+
+    <div class="flex justify-center items-center gap-8">
+        <div class="avatar online">
+            <div class="w-24 rounded-full">
+              <img src="https://avatars.githubusercontent.com/u/77718741?v=4" />
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-5">
+            <h1 class="text-4xl text-slate-300">Devansh Baghel</h1>
+
+            <h2 class="text-md text-slate-400">
+                Crafting digital experiences, one pixel at a time. Explore my creative journey and passion for design on my portfolio
+            </h2>
+          </div>
+
+
+    </div>
+
+    <!-- <h2 class="text-slate-300 mt-10">
+        As a passionate student developer with a fervent love for Linux, I've been on a thrilling journey in the open-source realm for the past three years. My Linux enthusiasm has not only enriched my understanding of this powerful operating system but has also driven me to actively contribute to various open-source projects, giving back to the community that has given me so much.
+        <br>
+        <br>
+        Over the course of my development journey, I've dived headfirst into the world of web development, dedicating the last 6-7 months to The Odin Project. Through this hands-on experience, I've gained proficiency in the fundamentals of web development, mastering the art of HTML, CSS, and JavaScript. Additionally, I've explored the exciting world of modern web technologies, delving into React, React Router, and harnessing the power of tools like Tailwind, Webpack, and Vite to create efficient and aesthetically pleasing web applications
+    </h2> -->
+
+    <h2 class="text-slate-300 mt-10">
+        Hello there! 👋 I'm Devansh Baghel, a dedicated student developer with a profound love for Linux, command line wizardry, web development and open-source technologies. Over the past 3 years, I've immersed myself in the Linux universe, spending countless hours configuring terminal emulators, tiling window managers, neovim plugins and playing around with all sorts of command line tools during the process.
+        <br>
+        <br>
+        My journey in web development has been equally exhilarating. I spent the last 6-7 months diving deep into The Odin Project, where I honed my skills and created several impressive web development projects. Proficient in JavaScript, I specialize in crafting interactive and visually appealing web applications. React.js is my go-to framework, and I leverage its robust features to build responsive and dynamic front-end interfaces.
+    </h2>
+
+    <div class="flex flex-row gap-5">
+        <button class="mt-10 btn btn-active btn-neutral" onclick="document.getElementById('projects').scrollIntoView();">Go to Projects</button>
+        <button class="mt-10 btn btn-active btn-neutral" onclick="changeTheme()">Change Theme</button>
+    </div>
+
+
+    <h1 class="text-4xl text-slate-300 mt-20 text-center">My Skills</h1>
+
+
+    <div class="text-slate-300">
+
+        <div class="flex flex-row">
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card-body">
+                  <h2 class="card-title">HTML</h2>
+                  <p>Defines the structure of the web!</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-active btn-neutral">HTML</button>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card-body">
+                  <h2 class="card-title">CSS</h2>
+                  <p>For all the styling!</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-active btn-neutral">CSS</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+
+        <div class="flex flex-row">
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card-body">
+                  <h2 class="card-title">JavaScript</h2>
+                  <p>Brings interactivity to the web!</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-active btn-neutral">JavaScript</button>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card-body">
+                  <h2 class="card-title">React</h2>
+                  <p>My go to frontend framework!</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-active btn-neutral">React</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="flex flex-row">
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card-body">
+                  <h2 class="card-title">Tailwind</h2>
+                  <p>The best way to write CSS!</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-active btn-neutral">Tailwind</button>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card-body">
+                  <h2 class="card-title">NextJs</h2>
+                  <p>Bring React to the server side!</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-active btn-neutral">NextJs</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+
+    </div>
+
+
+    <h1 class="text-4xl text-slate-300 mt-20 text-center" id="projects">My Projects</h1>
+
+
+    <div class="flex flex-row">
+        <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Book Store</h2>
+              <p>Made while working on The Odin Project</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-active btn-neutral"><a href="https://book-store-odin.vercel.app/">Live Demo</a></button>
+                <button class="btn btn-active btn-neutral"><a href="https://github.com/devansh-baghel/book-store">Source Code</a></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Memory Game</h2>
+              <p>Made while working on The Odin Project</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-active btn-neutral"><a href="https://flags-memory-game.vercel.app/">Live Demo</a></button>
+                <button class="btn btn-active btn-neutral"><a href="https://github.com/devansh-baghel/memory-game">Source Code</a></button>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="flex flex-row">
+        <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Todo App</h2>
+              <p>Made while working on The Odin Project</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-active btn-neutral"><a href="https://baghel-todo.vercel.app/">Live Demo</a></button>
+                <button class="btn btn-active btn-neutral"><a href="https://github.com/devansh-baghel/todo">Source Code</a></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Weather App</h2>
+              <p>Made while working on The Odin Project</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-active btn-neutral"><a href="https://baghel.vercel.app/">Live Demo</a></button>
+                <button class="btn btn-active btn-neutral"><a href="https://github.com/devansh-baghel/weather-app">Source Code</a></button>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <h1 class="text-4xl text-slate-300 text-center mt-20" id="contact">Contact Me</h1>
+
+    <!-- <div class="flex flex-col items-center">
+        <form action="" class="mt-10 flex flex-col gap-8 w-[300px]">
+            <input type="text" placeholder="Name" id="txtName" required class="input input-bordered w-full max-w-xs" />
+            <input type="email" placeholder="Email" id="txtEmail" required class="input input-bordered w-full max-w-xs" />
+            <textarea class="textarea textarea-bordered" id="msg" placeholder="Enter Your Message Here"></textarea>
+            <button class="btn btn-active btn-neutral" id="submit" onclick="saveFile(e)">Submit</button>
+        </form>
+    </div> -->
+
+
+
+    <div class="flex flex-col items-center">
+        <!--Add few elements to the form-->
+        <div class="w-[300px]"><input type="text" id="txtName" required placeholder="Name" id="txtName" required class="input input-bordered w-full max-w-xs my-4 w-[300px]" /></div>
+        <div class="w-[300px]"><input type="email" id="txtEmail" required placeholder="Email" id="txtEmail" required class="input input-bordered w-full max-w-xs my-4 w-[300px]" /></div>
+        <div>
+            <textarea id="msg" name="msg" placeholder="Write some message ..." class="textarea textarea-bordered my-4 w-[300px]"></textarea>
+        </div>
+
+        <!--Add a button to save the data.-->
+        <div>
+            <input class="btn btn-active btn-neutral" type="button" id="bt" value="Save data to file" onclick="saveFile()" />
+        </div>
+    </div>
+
+
+</div>
+      <!-- <script src="main.js"></script> -->
+      <script>
+        let saveFile = () => {
+    	
+        // Get the data from each element on the form.
+    	const name = document.getElementById('txtName');
+        const email = document.getElementById('txtEmail');
+        const msg = document.getElementById('msg');
+
+        if (name.value === "" || email.value === "" || msg.value === "" ) {
+            alert("Details not provided")
+        } else if (!email.value.includes("@")) {
+            alert("Incorrect email")
+        }
+        
+        // This variable stores all the data.
+        let data = 
+            '\r Name: ' + name.value + ' \r\n ' + 
+            'Email: ' + email.value + ' \r\n ' + 
+            'Message: ' + msg.value;
+        
+        // Convert the text to BLOB.
+        const textToBLOB = new Blob([data], { type: 'text/plain' });
+        const sFileName = 'formData.txt';	   // The file to save the data.
+
+        let newLink = document.createElement("a");
+        newLink.download = sFileName;
+
+        if (window.webkitURL != null) {
+            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+        }
+        else {
+            newLink.href = window.URL.createObjectURL(textToBLOB);
+            newLink.style.display = "none";
+            document.body.appendChild(newLink);
+        }
+
+        newLink.click(); 
+    }
+
+
+      </script>
+</body>
+</html>
